@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    /* Alinhamento de texto */
+    text-align: center;
+    padding: 30px;
+}
+
+main#album {
+    /* Renderiza os elementos */
+    display:flex;
+    /* Coloca o conteúdo em linha e não permite a que quebra de linha */
+    flex-flow: row wrap;
+}
+
+section.coluna {
+    /*border: 1px dashed black; */
+    flex: 1 1 100%;
+    padding: 0px 5px;
+}
+
+section > img {
+    /* Esfecifica a largura e altura de uma imagem */
+    width: 30%;
+    /* Esfecifica a distância na parte inferior do conteúdo */
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer {
+    background-color: black;
+    color:white;
+    padding: 15px;
+    text-align: center;
+}
